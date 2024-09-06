@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="DOM1_Boots.css">
+</head>
+<body class="bg-dark text-white d-flex justify-content-center align-items-center vh-100">
+
+    <div id="caja1" class="form-container bg-secondary p-4 rounded shadow-lg">
+
+        <h2 class="text-center">Captura de datos</h2>
+        <form name="fdatos">
+
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" class="form-control" id="name1" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Edad:</label>
+                <input type="number" class="form-control" id="edad1" name="age" required min="0">
+            </div>
+
+            <div class="form-group">
+                <label>Sexo:</label><br>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" name="sexo" value="masculino" checked> Masculino
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" name="sexo" value="femenino"> Femenino
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-success btn-block" onclick="calcular()">Enviar</button>
+
+        </form>
+
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="DOM1_Boots.js"></script>
+
+</body>
+</html>
